@@ -4,6 +4,10 @@ import time
 import requests
 import asyncio
 import os
+from sys import platform
+if platform != "win32":
+    print("This Program Only Works On Wimdows sorry.")
+    exit()
 
 file=input("Do you need to download an IPs file (y/n): ")
 if file=="y" or file=="Y":
